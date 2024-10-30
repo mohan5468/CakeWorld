@@ -1,0 +1,5 @@
+CREATE TABLE `cake_shop`.`orders` (`id` INT(10) NOT NULL AUTO_INCREMENT , `name` VARCHAR(255) NOT NULL , `mobile` INT(10) NOT NULL , `email` VARCHAR(255) NOT NULL , `items` TEXT NOT NULL ,
+ `total_cost` INT(10) NOT NULL , `date` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+CREATE TABLE `cake_shop`.`user_details` (`id` INT(10) NOT NULL AUTO_INCREMENT , `name` VARCHAR(255) NOT NULL , `mobile` VARCHAR(15) NOT NULL , `email` VARCHAR(255) NOT NULL ,
+ `password` VARCHAR(255) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
